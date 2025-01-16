@@ -22,7 +22,6 @@ class Knight(threading.Thread):
 
         print(f'{self.name}, одержал победу спустя {days} дней(дня)!\n')
 
-
 first_knight = Knight('Sir Lancelot', 10)
 second_knight = Knight("Sir Galahad", 20)
 
@@ -32,3 +31,4 @@ thread1.start()
 thread2.start()
 thread1.join()
 thread2.join()
+print(f'Все битвы закончились!')
